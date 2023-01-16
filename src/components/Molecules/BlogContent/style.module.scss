@@ -1,0 +1,10 @@
+.Container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  .img-box {
+    position: relative;
+    border-radius: 50%;
+  }
+}
