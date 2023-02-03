@@ -1,0 +1,8 @@
+@use '../../../styles/base';
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+
+  color: base.$gray-light;
+}

@@ -1,18 +1,9 @@
 import '../styles/globals.scss'
 
-// const Container = styled.div`
-//   main {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 2rem;
-//     padding: 1.6rem;
+import styles from '../styles/page.module.scss'
+import Breadcrumb from '@Molecules/Breadcrumb'
 
-//     @media (min-width: 768px) {
-//       flex-direction: row;
-//       justify-content: space-between;
-//     }
-//   }
-// `
+const test = ['Home', 'Company', '회사소개', 'CEO 인사말']
 
 export default function RootLayout({
   children
@@ -20,9 +11,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <main className={styles.main}>
+          <div className={styles.warpper}>
+            <div className={styles.leftContainer}>test</div>
+            <div className={styles.rightContainer}>{children}</div>
+          </div>
+        </main>
+      </body>
     </html>
   )
 }
