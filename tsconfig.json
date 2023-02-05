@@ -29,7 +29,8 @@
       "@Molecules/*": ["components/Molecules/*"],
       "@Organisms/*": ["components/Organisms/*"],
       "@app/*": ["app/*"],
-      "@pages/*": ["pages/*"]
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

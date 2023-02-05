@@ -1,15 +1,15 @@
 @use 'base';
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: base.$content-width;
+  @include base.flex-center-content;
+  min-width: base.$main-container-width;
 }
 
 .warpper {
   display: flex;
-  width: base.$content-width;
+  gap: 39px;
+  width: base.$main-container-width;
+  margin-top: base.$offset-top;
 }
 
 .leftContainer {
@@ -18,5 +18,15 @@
 }
 
 .rightContainer {
-  display: flex;
+  @include base.flex-center-content;
+  flex: auto;
+}
+
+.rightContainerWrapper {
+  width: base.$right-container-width;
+}
+
+.imageWrapper {
+  @include base.flex-center-content;
+  flex: 1 1 0;
 }

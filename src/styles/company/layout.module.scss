@@ -1,0 +1,10 @@
+@use '@styles/base';
+
+.wrapper {
+  @include base.flex-center-content;
+  flex: 1 auto;
+  gap: 10px;
+}
+.content {
+  width: 100%;
+}

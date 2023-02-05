@@ -1,0 +1,8 @@
+@use '@styles/base';
+
+.title {
+  color: base.$dark-gray;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
